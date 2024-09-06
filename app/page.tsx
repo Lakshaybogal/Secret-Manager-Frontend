@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchSecret() {
       try {
-        const secret = await getSecret("11a17360149ba0e6", "b0b525c7");
+        const secret = await getSecret("948bc7ccdb49888b", "b15ba0d6");
         setPassword(secret);
       } catch (error) {
         console.error("Failed to fetch the secret:", error);

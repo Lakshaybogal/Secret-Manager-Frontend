@@ -6,6 +6,7 @@ import { FaEye, FaEyeSlash, FaRotate } from "react-icons/fa6";
 export const AccessPassword: React.FC<AccessPasswordProps> = ({
   secretData,
   setSecretData,
+  style,
 }) => {
   const [showAccessPassword, setShowAccessPassword] = useState(false);
 
@@ -29,7 +30,7 @@ export const AccessPassword: React.FC<AccessPasswordProps> = ({
   };
 
   return (
-    <p className="text-sm mb-2 flex justify-center items-center">
+    <p className={style}>
       {showAccessPassword ? secretData.access_password : "********"}
       <span
         className="text-blue-500 cursor-pointer"

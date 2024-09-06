@@ -18,4 +18,18 @@ export interface CreateSecret {
 export interface AccessPasswordProps {
   secretData: Secret;
   setSecretData: Dispatch<SetStateAction<Secret>>;
+  style: string;
+}
+
+export interface SecretCardProps {
+  secret: Secret;
+  onDelete: (id: number) => void;
+  setError: Dispatch<SetStateAction<string>>;
+}
+
+export interface UpdateSecretProps {
+  id: number;
+  name: string;
+  value: string;
+  description: string;
 }
